@@ -27,6 +27,7 @@ This assignment is part of the NextGen Tech Training Program. It aims to enhance
 ## Tools and Technologies
 
 - **HTML5** for page structure.
+- **JavaScript** for interactivity.
 - **CSS3** for styling.
 - **CSS Flexbox** and **Grid** for efficient layout design.
 
