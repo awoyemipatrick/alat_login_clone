@@ -47,6 +47,7 @@ Project includes the following main files:
 
 - `index.html`
 - `styles.css`
+- `script.js`
 
 Organize code for readability and maintainability.
 
