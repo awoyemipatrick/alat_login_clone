@@ -1,7 +1,14 @@
+/* Global Styles */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: Proxima Nova, sans-serif;
+}
+
+html,
+body {
+  overflow-x: hidden;
 }
 
 .container {
@@ -18,6 +25,7 @@
   background-color: white;
 }
 
+/* Info Wrapper */
 .info_wrapper {
   background-image: url(./assets/login-banner.png);
   background-size: cover;
@@ -30,11 +38,178 @@
   padding: 20px;
 }
 
-.form_wrapper {
+.info_wrapper_content {
+  color: #fff;
+}
+
+.info_header_h6 {
+  font-size: 1.08rem;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+/* Authentication Section */
+.auth_section {
   height: 100%;
   padding: 10px 40px;
 }
 
+.auth_form_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-inline: auto;
+  margin-top: 2rem;
+  max-width: 24rem;
+}
+
+.external_link {
+  font-size: 16px;
+  color: #ab2656;
+}
+
+.auth_content {
+  width: 100%;
+}
+
+.auth_header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.cbn_license {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.cbn_license p {
+  color: #4d4d4d;
+  font-size: 0.93rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.cbn_license img {
+  width: 24px;
+  height: 31.5px;
+}
+
+.welcome_title {
+  font-size: 21px;
+  margin-top: 32px;
+  color: #444444;
+}
+
+.red_underline {
+  width: 2.5rem;
+  height: 0.25rem;
+  display: block;
+  margin-top: 0.75rem;
+  opacity: 1;
+  background-color: rgb(171, 11, 75);
+}
+
+/* Login Form */
+.login_form {
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+/* Form Group */
+.form_group label {
+  color: #757575;
+  width: 100%;
+  display: flex;
+  position: relative;
+  font-size: 0.93rem;
+  align-items: center;
+  margin-bottom: 8px;
+  justify-content: space-between;
+}
+
+/* Input Fields */
+.form_control {
+  font-weight: 400;
+  color: #757575;
+  width: 100%;
+  border: 1px solid #ced4da;
+  padding: 0.5rem;
+  position: relative;
+  font-size: 1rem;
+  min-width: 100px;
+  border-radius: 8px;
+  background-color: #fff;
+  transition: border-color 300ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form_control input {
+  width: 100%;
+  border: none;
+  outline: none;
+}
+
+.form_control input:focus {
+  border: none;
+  box-shadow: none;
+}
+
+/* Password Wrapper */
+.password_wrapper {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 0.5rem;
+}
+
+.password_wrapper input {
+  flex-grow: 1;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  background-color: transparent;
+}
+
+.toggle_password_visibility {
+  display: flex;
+  align-items: center;
+  margin-left: 0.5rem;
+}
+
+.toggle_button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.toggle_button img {
+  border: none;
+}
+
+.submit_button {
+  width: 100%;
+  margin-bottom: calc(2rem * 0);
+  margin-top: calc(2rem * (1 - 0));
+  padding: 8px 16px;
+  font-size: 0.9285714285714286rem;
+  min-width: 112px;
+  font-weight: 600;
+  border-radius: 3px;
+  background-color: #ab2656;
+  color: #f2f2f2;
+  border: none;
+  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
+    0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+}
+
+/* Social Icons */
 .social_icons {
   display: flex;
   gap: 24px;
@@ -48,17 +223,16 @@
   border: none;
 }
 
-.alat_icon {
+.logo_container {
   width: 48px;
 }
 
+/* Consent */
 .consent {
   position: fixed;
   bottom: 0;
   right: 20px;
 }
-
-
 
 /* ------ Media Queries ------ */
 
@@ -78,7 +252,7 @@
     grid-column: span 5;
   }
 
-  .form_wrapper {
+  .auth_section {
     grid-column: span 6;
   }
 }
@@ -86,10 +260,13 @@
 @media (min-width: 1024px) {
   .info_wrapper {
     grid-column: span 6;
-    /* display: none;  */
   }
 
-  .form_wrapper {
+  .auth_section {
     grid-column: span 5;
+  }
+
+  .info_header_h6 {
+    font-size: 1.09rem;
   }
 }

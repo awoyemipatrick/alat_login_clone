@@ -4,18 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
-    <title>Document</title>
+    <title> Alat Login Page Clone </title>
   </head>
   <body>
     <main>
       <div class="container">
         <div class="wrapper">
-          <div class="info_wrapper">
+          <section class="info_wrapper">
             <div></div>
-            <div>
-              <div style="color: #fff; margin-bottom: 15px">
-                <h6 class="" style="font-weight: 700">Talk to Us</h6>
-                <p class="">We are happy to assist</p>
+            <div class="info_wrapper_content">
+              <div style="margin-bottom: 15px">
+                <h6 class="info_header_h6" style="font-weight: 700">
+                  Talk to Us
+                </h6>
+                <p class="info_header_p">We are happy to assist</p>
               </div>
               <div>
                 <div>
@@ -37,57 +39,66 @@
                 </button>
               </div>
             </div>
-          </div>
-          <div class="form_wrapper">
-            <div class="">
-              <a href=""><span>Go to ALAT Website</span></a>
-              <div>
-                <div>
-                  <div class="alat_icon">
-                    <img src="./assets/alat_icon.svg" alt="" />
+          </section>
+          <section class="auth_section">
+            <div class="auth_form_wrapper">
+              <a href="" class="external_link"
+                ><span>Go to ALAT Website</span></a
+              >
+              <div class="auth_content">
+                <div class="auth_header">
+                  <div class="logo_container">
+                    <img src="./assets/alat_icon.svg" alt="ALAT Logo" />
                   </div>
-                  <div>
-                    <p>Licensed by the CBN</p>
-                    <img src="" alt="" />
+                  <div class="cbn_license">
+                    <p >Licensed by the CBN</p>
+                    <img src="./assets/cbn_logo.png" alt="CBN License" />
                   </div>
                 </div>
-                <h1>Welcome Back!</h1>
-                <form>
-                  <div class="">
+                <h1 class="welcome_title">Welcome Back!</h1>
+                <span class="red_underline"></span>
+                <form class="login_form">
+                  <div class="form_group">
                     <label for="email">Email Address/Username</label>
-                    <div class="formControl">
-                      <input type="email" />
+                    <div class="form_control">
+                      <input type="email" id="email" />
                     </div>
                   </div>
-                  <div>
-                    <label for="password"
-                      >Password<a href="">Forgot password?</a></label
-                    >
-                    <div class="">
-                      <input type="password" />
-                      <div class="">
-                        <button type="button"></button>
-                      </div>
-                    </div>
+                  <div class="form_group">
+                    <label for="password">
+                      Password
+                      <a href="" class="forgot_password_link"
+                        >Forgot password?</a
+                      >
+                    </label>
+                    <div class="password_wrapper">
+                      <input type="password" id="password" />
+                      <span class="toggle_password_visibility">
+                        <button type="button" class="toggle_button" id="togglePassword">
+                          <img src="./assets/eye_icon.svg" alt="Show password" id="eyeIcon" />
+                        </button>
+                      </span>
+                    </div>                                    
                   </div>
-                  <button type="submit">
+                  <button type="submit" class="submit_button">
                     <span>Login</span>
                   </button>
-                  <div>
-                    <p>New to ALAT?<span> Sign up</span></p>
+                  <div class="signup_link_container">
+                    <p>New to ALAT? <span class="signup_link">Sign up</span></p>
                   </div>
                 </form>
               </div>
-              <div>
-                <button></button>
-              </div>
+              <!-- <div class="contact_support">
+                <button class="support_button"></button>
+              </div> -->
             </div>
-          </div>
+          </section>
           <div class="consent">
             <button>Manage Consent</button>
           </div>
         </div>
       </div>
     </main>
+    <script src="./script.js"></script>
   </body>
 </html>
