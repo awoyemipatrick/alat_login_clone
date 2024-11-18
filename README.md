@@ -33,7 +33,8 @@ This assignment is part of the NextGen Tech Training Program. It aims to enhance
 
 ## Screenshot
 
-![Page's Screenshot](./)
+![Page's Screenshot](./assets/alat_screenshot.jpeg)
+![Page's Screenshot](./assets/Screenshot_mobile.jpeg)
 
 ## Process
 
