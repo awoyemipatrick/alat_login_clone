@@ -21,3 +21,16 @@ document
       eyeIcon.alt = "Show password";
     }
   });
+
+
+
+/****  Map Exercise  ****/
+
+// const userMap = new Map([
+//   [1, {name: 'Yinka'}],
+//   [2, {name: 'Oyin'}],
+// ]);
+
+// userMap.set({userId: 1}, {name: 'Tobi'})
+
+// console.log(userMap)
