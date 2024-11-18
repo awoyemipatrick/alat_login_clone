@@ -145,7 +145,7 @@ body {
 .form_control {
   font-weight: 400;
   color: #757575;
- 
+
   width: 100%;
   border: 1px solid #ced4da;
   padding: 0.5rem;
@@ -211,7 +211,6 @@ body {
   font-size: 14.8571px;
   opacity: 1;
   color: rgb(171 38 86 / 1);
-
 }
 
 .submit_button {
