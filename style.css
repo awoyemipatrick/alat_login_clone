@@ -1,4 +1,7 @@
-* {
+*,
+:after,
+:before {
+  border: 0 solid #e5e7eb;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -11,9 +14,13 @@ body {
   overflow-x: hidden;
 }
 
+p {
+  font-size: 14.8571px;
+}
+
 .container {
   width: 100%;
-  min-height: 100vh;
+  /* min-height: 100vh; */
 }
 
 .wrapper {
@@ -39,12 +46,43 @@ body {
 
 .info_wrapper_content {
   color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: 3rem 0;
 }
 
 .info_header_h6 {
-  font-size: 1.08rem;
+  font-size: 17.5008px;
   font-weight: 500;
   line-height: 1.6;
+}
+
+.cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.email_wrapper,
+.phone_wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.email_wrapper a,
+.phone_wrapper a {
+  color: rgb(255 255 255 / 1);
+  font-size: 14.8571px;
+}
+
+.social_icons {
+  max-width: 28rem;
+  width: 100%;
+  margin-inline: auto;
 }
 
 /* Authentication Section */
@@ -56,6 +94,7 @@ body {
   flex-direction: column;
   align-items: center;
   margin: auto;
+  /* padding-block: 2.5rem; */
 }
 
 .auth_form_wrapper {
@@ -64,6 +103,7 @@ body {
   margin-inline: auto;
   max-width: 24rem;
   width: 100%;
+  /* margin-top: 3rem; */
 }
 
 .external_link {
@@ -147,21 +187,27 @@ body {
   color: #757575;
 
   width: 100%;
-  border: 1px solid #ced4da;
-  padding: 0.5rem;
   position: relative;
   font-size: 1rem;
   min-width: 100px;
   border-radius: 4px;
-  background-color: #fff;
-  transition: border-color 300ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  background-color: transparent;
+  border: 1px solid #ab2656;
+  padding: 0.8rem;
+  border-radius: 4px;
+}
+
+.form_control:focus-within {
+  background-color: #fafafa;
+  border-color: #9aa19e;
 }
 
 .form_control input {
   width: 100%;
   border: none;
   outline: none;
+  background: transparent;
 }
 
 .form_control input:focus {
@@ -173,13 +219,18 @@ body {
   margin-top: 1rem;
 }
 
-/* Password Wrapper */
 .password_wrapper {
   display: flex;
   align-items: center;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  background-color: #fff;
+  border: 1px solid #ab2656;
   padding: 0.5rem;
+  border-radius: 4px;
+}
+
+.password_wrapper:focus-within {
+  background-color: #fafafa;
+  border-color: #9aa19e;
 }
 
 .password_wrapper input {
